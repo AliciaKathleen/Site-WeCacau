@@ -1,8 +1,5 @@
-// Initialize Lucide icons
 lucide.createIcons();
 
-
-// Navigation scroll effect
 const nav = document.getElementById('mainNav');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
@@ -12,7 +9,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Products data
 const products = [
     {
         name: "Brigadeiros Gourmet",
@@ -31,7 +27,6 @@ const products = [
     }
 ];
 
-// Render products
 const productGrid = document.getElementById('productGrid');
 products.forEach(product => {
     const productCard = document.createElement('div');
@@ -55,7 +50,6 @@ products.forEach(product => {
     productGrid.appendChild(productCard);
 });
 
-// Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -67,17 +61,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Contact form handling
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
     const formData = new FormData(this);
-    // Here you would typically send the form data to a server
     alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
     this.reset();
 });
 
-// Intersection Observer for section animations
 const sections = document.querySelectorAll('section');
 const observerOptions = {
     threshold: 0.1,
@@ -96,7 +87,6 @@ sections.forEach(section => {
     sectionObserver.observe(section);
 });
 
-// Add click handlers for all buttons
 document.querySelectorAll('button').forEach(button => {
     button.addEventListener('click', function() {
         if (this.textContent.trim() === 'Fazer Pedido' || 
