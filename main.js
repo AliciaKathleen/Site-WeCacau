@@ -11,19 +11,19 @@ window.addEventListener('scroll', () => {
 
 const products = [
     {
-        name: "Brigadeiros Gourmet",
-        price: "R$ 5,00",
-        image: "https://images.unsplash.com/photo-1589375025852-a66cdd127c7f?auto=format&fit=crop&w=800&q=80"
+        name: "Doces Personalizados",
+        price: "",
+        image: "images/doces-natal.jpg"
     },
     {
-        name: "Cupcakes Decorados",
-        price: "R$ 8,00",
-        image: "https://images.unsplash.com/photo-1587536849024-daaa4a417b16?auto=format&fit=crop&w=800&q=80"
+        name: "Diversos Sabores",
+        price: "",
+        image: "images/doces.jpeg"
     },
     {
-        name: "Bolos Personalizados",
-        price: "Sob consulta",
-        image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80"
+        name: "Doces Artesanais",
+        price: "",
+        image: "images/doces-natal2.jpg"
     }
 ];
 
@@ -41,9 +41,6 @@ products.forEach(product => {
             <h3 class="text-xl font-semibold mb-2">${product.name}</h3>
             <div class="flex justify-between items-center">
                 <span class="text-pink-600 font-bold">${product.price}</span>
-                <button class="bg-pink-600 text-white px-4 py-2 rounded-full hover:bg-pink-700 transition-colors">
-                    Pedir
-                </button>
             </div>
         </div>
     `;
