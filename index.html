@@ -7,8 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-
-    </section>
+    <nav id="mainNav" class="fixed w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <i data-lucide="cake" class="text-pink-600 h-8 w-8"></i>
+                <span class="text-2xl font-bold text-pink-600">Sweet Dreams</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-pink-600 transition-colors">Início</a>
+                <a href="#products" class="text-gray-700 hover:text-pink-600 transition-colors">Produtos</a>
+                <a href="#delivery" class="text-gray-700 hover:text-pink-600 transition-colors">Delivery</a>
+                <a href="#contact" class="text-gray-700 hover:text-pink-600 transition-colors">Contato</a>
+            </div>
+            <button class="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700 transition-colors">
+                Fazer Pedido
+            </button>
+        </div>
+    </nav>
 </body>
 </html>
