@@ -1,59 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeCacau</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="/path/to/tailwind.css" rel="stylesheet">
 </head>
 <body>
     <nav id="mainNav" class="fixed w-full z-50 transition-all duration-300">
-        <div class="container mx-auto px-4 flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-                <i data-lucide="cake" class="text-pink-600 h-8 w-8"></i>
-                <span class="text-2xl font-bold text-pink-600">WeCacau</span>
-            </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#home" class="text-gray-700 hover:text-pink-600 transition-colors">Início</a>
-                <a href="#products" class="text-gray-700 hover:text-pink-600 transition-colors">Produtos</a>
-                <a href="#delivery" class="text-gray-700 hover:text-pink-600 transition-colors">Delivery</a>
-                <a href="#contact" class="text-gray-700 hover:text-pink-600 transition-colors">Contato</a>
-            </div>
-            <button class="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700 transition-colors">
-                Fazer Pedido
-            </button>
+    <div class="container mx-auto px-4 flex items-center justify-between">
+        <div class="flex items-center space-x-2">
+            <span class="text-2xl font-bold text-red-900">WeCacau</span>
         </div>
+        <div class="hidden md:flex space-x-8">
+            <a href="#home" class="text-gray-700 hover:text-pink-600 transition-colors">Início</a>
+            <a href="#products" class="text-gray-700 hover:text-pink-600 transition-colors">Produtos</a>
+            <a href="#delivery" class="text-gray-700 hover:text-pink-600 transition-colors">Delivery</a>
+            <a href="#contact" class="text-gray-700 hover:text-pink-600 transition-colors">Contato</a>
+        </div>
+        <button class="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700 transition-colors">
+            Fazer Pedido
+        </button>
+    </div>
     </nav>
 
-    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24">
-        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
-            <div class="space-y-6">
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-800">
-                    Doces que Encantam<br>
-                    <span class="text-pink-600">Momentos Especiais</span>
-                </h1>
-                <p class="text-gray-600 text-lg">
-                    Descubra nossa deliciosa seleção de doces artesanais, perfeitos para qualquer ocasião.
-                    Entregamos amor e sabor diretamente na sua porta.
-                </p>
-                <div class="flex space-x-4">
-                    <button class="bg-pink-600 text-white px-8 py-3 rounded-full hover:bg-pink-700 transition-colors">
-                        Ver Cardápio
-                    </button>
-                    <button class="border-2 border-pink-600 text-pink-600 px-8 py-3 rounded-full hover:bg-pink-50 transition-colors">
-                        Fazer Pedido
-                    </button>
-                </div>
-            </div>
-            <div class="relative">
-                <img 
-                    src="https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=800&q=80" 
-                    alt="Deliciosos doces artesanais"
-                    class="rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300"
-                >
+
+    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 bg-orange-100">
+    <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+        <div class="space-y-6">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-800">
+                Doces que Encantam<br>
+                <span class="text-red-900">Momentos Especiais</span>
+            </h1>
+            <p class="text-gray-600 text-2xl">
+                Descubra nossa deliciosa seleção de doces artesanais, perfeitos para qualquer ocasião.
+                Entregamos amor e sabor diretamente na sua porta.
+            </p>
+            <div class="flex space-x-4">
+                <button class="bg-red-900 text-white px-8 py-3 rounded-full hover:bg-red-950 transition-colors">
+                    Ver Cardápio
+                </button>
+                <button class="border-2 border-red-900 text-red-900 px-8 py-3 rounded-full hover:bg-red-50 transition-colors">
+                    Fazer Pedido
+                </button>
             </div>
         </div>
-    </section>
+        <div class="relative">
+            <img 
+                src="images/box.png" 
+                alt="Deliciosos doces artesanais"
+                class="w-30 h-30 object-cover rounded-none transform hover:scale-105 transition-transform duration-300"
+            >
+        </div>
+    </div>
+</section>
 
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
@@ -71,7 +73,7 @@
                 <div class="p-6 text-center space-y-4 hover:shadow-xl rounded-xl transition-shadow duration-300">
                     <i data-lucide="store" class="mx-auto h-12 w-12 text-pink-600"></i>
                     <h3 class="text-xl font-semibold">Revenda</h3>
-                    <p class="text-gray-600">Seja um revendedor autorizado</p>
+                    <p class="text-gray-600">Seja um revendedor</p>
                 </div>
             </div>
         </div>
@@ -80,7 +82,7 @@
     <section id="products" class="py-16 bg-pink-50">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
-                Nossos Produtos Mais Amados
+                Nossos Produtos
             </h2>
             <div class="grid md:grid-cols-3 gap-8" id="productGrid">
             </div>
@@ -101,11 +103,11 @@
                     <div class="space-y-4">
                         <div class="flex items-center space-x-4">
                             <i data-lucide="clock" class="text-pink-600"></i>
-                            <span>Entregas de Segunda a Sábado, das 9h às 20h</span>
+                            <span>Entregas de Segunda-Feira a Sexta-Feira, de 9h às 18h</span>
                         </div>
                         <div class="flex items-center space-x-4">
                             <i data-lucide="map-pin" class="text-pink-600"></i>
-                            <span>Cobertura em toda região metropolitana</span>
+                            <span>Cobertura em toda região de Pelotas</span>
                         </div>
                         <div class="flex items-center space-x-4">
                             <i data-lucide="truck" class="text-pink-600"></i>
@@ -115,7 +117,7 @@
                 </div>
                 <div class="relative">
                     <img 
-                        src="https://images.unsplash.com/photo-1621955964441-c173e01c135b?auto=format&fit=crop&w=800&q=80" 
+                        src="" 
                         alt="Delivery de doces"
                         class="rounded-lg shadow-xl"
                     >
@@ -177,7 +179,7 @@
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
                         <i data-lucide="cake" class="text-pink-600 h-6 w-6"></i>
-                        <span class="text-xl font-bold">WeCacau</span>
+                        <span class="text-xl font-bold">Sweet Dreams</span>
                     </div>
                     <p class="text-gray-400">
                         Transformando momentos em doces lembranças desde 2020.
@@ -206,5 +208,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
