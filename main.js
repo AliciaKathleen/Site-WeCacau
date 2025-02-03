@@ -11,18 +11,18 @@ window.addEventListener('scroll', () => {
 
 const products = [
     {
-        name: "Doces Personalizados",
-        price: "",
+        name: "Doces PersonalizadosDoces Presenteáveis",
+        price: "Caixa com 4 unidades<br>Caixa com 6 unidades",
         image: "images/doces-natal.jpg"
     },
     {
-        name: "Diversos Sabores",
-        price: "",
+        name: "Opções para toda família",
+        price: "Caixa com 35 unidades<br>Meio cento (50 unidades)<br>Cento (100 unidades)",
         image: "images/doces.jpeg"
     },
     {
-        name: "Doces Artesanais",
-        price: "",
+        name: "Diversos sabores",
+        price: "Sabores tradicionais (chocolate e coco)<br>Sabores especiais (morango, ninho e café)",
         image: "images/doces-natal2.jpg"
     }
 ];
