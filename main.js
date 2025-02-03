@@ -11,7 +11,7 @@ window.addEventListener('scroll', () => {
 
 const products = [
     {
-        name: "Doces PersonalizadosDoces Presenteáveis",
+        name: "Doces Presenteáveis",
         price: "Caixa com 4 unidades<br>Caixa com 6 unidades",
         image: "images/doces-natal.jpg"
     },

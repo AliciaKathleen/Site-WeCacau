@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seja um Revendedor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#ff69b4',
+              secondary: '#ff1493',
+              background: '#fff5f8',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="font-sans leading-relaxed bg-[#fff5f8] text-gray-800">
+    <div class="max-w-7xl mx-auto px-8 py-8 md:px-4">
+      <header class="text-center mb-12">
+        <h1 class="text-secondary text-4xl mb-2">WeCacau</h1>
+        <p class="text-primary text-xl mb-8">Faça seu pedido para revenda</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+          <div class="text-center">
+            <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=500&auto=format" 
+                 alt="Brigadeiros" 
+                 class="w-full h-48 object-cover rounded-lg shadow-md mb-4" />
+          </div>
+          <div class="text-center">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=500&auto=format" 
+                 alt="Cupcakes" 
+                 class="w-full h-48 object-cover rounded-lg shadow-md mb-4" />
+          </div>
+          <div class="text-center">
+            <img src="https://images.unsplash.com/photo-1612203985729-70726954388c?w=500&auto=format" 
+                 alt="Docinhos" 
+                 class="w-full h-48 object-cover rounded-lg shadow-md mb-4" />
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-8 mb-8 flex-wrap">
+          <p class="bg-white px-4 py-2 rounded-full shadow">✨ Produtos frescos e artesanais</p>
+          <p class="bg-white px-4 py-2 rounded-full shadow">🚚 Entrega para toda a cidade</p>
+          <p class="bg-white px-4 py-2 rounded-full shadow">💝 Embalagens personalizadas</p>
+        </div>
+      </header>
+
+      <form id="pedidoForm" class="bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto">
+        <div class="mb-6">
+          <label for="nome" class="block font-bold mb-2">Nome Completo:</label>
+          <input type="text" id="nome" required
+                 class="w-full px-3 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-primary">
+        </div>
+
+        <div class="mb-6">
+          <label for="telefone" class="block font-bold mb-2">Telefone:</label>
+          <input type="tel" id="telefone" required
+                 class="w-full px-3 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-primary">
+        </div>
+
+        <div class="mb-6">
+          <label for="email" class="block font-bold mb-2">E-mail:</label>
+          <input type="email" id="email" required
+                 class="w-full px-3 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-primary">
+        </div>
+
+        <div class="mb-6">
+          <label class="block font-bold mb-2">Produtos:</label>
+          
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-4 mb-4">
+            <label for="brigadeiros" class="flex-1">Brigadeiros (cento)</label>
+            <input type="number" id="brigadeiros" min="0" value="0"
+                   class="w-full md:w-24 px-3 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-primary">
+          </div>
+
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-4 mb-4">
+            <label for="cupcakes" class="flex-1">Cupcakes (cento)</label>
+            <input type="number" id="cupcakes" min="0" value="0"
+                   class="w-full md:w-24 px-3 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-primary">
+          </div>
+
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-4 mb-4">
+            <label for="docinhos" class="flex-1">Docinhos Tradicionais (cento)</label>
+            <input type="number" id="docinhos" min="0" value="0"
+                   class="w-full md:w-24 px-3 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-primary">
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <label for="data" class="block font-bold mb-2">Data de Entrega:</label>
+          <input type="date" id="data" required
+                 class="w-full px-3 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-primary">
+        </div>
+
+        <div class="mb-6">
+          <label for="observacoes" class="block font-bold mb-2">Observações:</label>
+          <textarea id="observacoes" rows="4"
+                    class="w-full px-3 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+        </div>
+
+        <button type="submit" 
+                class="w-full bg-secondary hover:bg-primary text-white py-4 px-8 rounded-md text-lg transition-colors duration-300">
+          Enviar Pedido
+        </button>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
