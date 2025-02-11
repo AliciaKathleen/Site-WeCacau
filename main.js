@@ -84,12 +84,3 @@ sections.forEach(section => {
     sectionObserver.observe(section);
 });
 
-document.querySelectorAll('button').forEach(button => {
-    button.addEventListener('click', function() {
-        if (this.textContent.trim() === 'Fazer Pedido' || 
-            this.textContent.trim() === 'Ver Cardápio' || 
-            this.textContent.trim() === 'Pedir') {
-            alert('Em breve você poderá fazer pedidos online! Por enquanto, entre em contato pelo WhatsApp.');
-        }
-    });
-});

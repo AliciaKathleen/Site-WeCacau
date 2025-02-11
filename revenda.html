@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="revendas.css">
     <title>Seja um Revendedor</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -13,102 +14,64 @@
               primary: '#7C2D12',
               secondary: '#431407',
               background: '#FAFAFA',
+            },
+            transitionProperty: {
+              'transform': 'transform',
             }
           }
         }
       }
     </script>
+    
   </head>
   <body class="font-sans leading-relaxed bg-[#FAFAFA] text-gray-800">
     <div class="max-w-7xl mx-auto px-8 py-8 md:px-4">
-      <header class="text-center mb-12">
-        <h1 class="text-secondary text-5xl font-black mb-2">WeCacau</h1>
-        <p class="text-primary font-medium text-xl mb-8">Faça seu pedido para revenda</p>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-          <div class="text-center">
-            <img src="images/doces-decorados.jpeg" 
-                 alt="Brigadeiros" 
-                 class="w-full h-48 object-cover rounded-lg shadow-md mb-4" />
-          </div>
-          <div class="text-center">
-            <img src="images/doces-natal.jpg" 
-                 alt="Cupcakes" 
-                 class="w-full h-48 object-cover rounded-lg shadow-md mb-4" />
-          </div>
-          <div class="text-center">
-            <img src="images/doces-natal2.jpg" 
-                 alt="Docinhos" 
-                 class="w-full h-48 object-cover rounded-lg shadow-md mb-4" />
-          </div>
-        </div>
-
-        <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-8 mb-8 flex-wrap">
-          <p class="font-semibold bg-white px-5 py-2 rounded-full shadow">Produtos gourmet</p>
-          <p class="font-semibold bg-white px-5 py-2 rounded-full shadow">Entrega gratuita</p>
-          <p class="font-semibold bg-white px-5 py-2 rounded-full shadow">Feitas com amor</p>
-        </div>
+      <header class="text-center mb-12 fade-in">
+        <h1 class="text-secondary text-5xl font-black mb-2 hover:scale-105 transition-all duration-500 ease-in-out">WeCacau</h1>
       </header>
-
-      <form id="pedidoForm" class="bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto">
-        <div class="mb-6">
-          <label for="nome" class="block font-bold mb-2">Nome Completo:</label>
-          <input type="text" id="nome" required
-                 class="w-full px-3 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-primary">
-        </div>
-
-        <div class="mb-6">
-          <label for="telefone" class="block font-bold mb-2">Telefone:</label>
-          <input type="tel" id="telefone" required
-                 class="w-full px-3 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-primary">
-        </div>
-
-        <div class="mb-6">
-          <label for="email" class="block font-bold mb-2">E-mail:</label>
-          <input type="email" id="email" required
-                 class="w-full px-3 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-primary">
-        </div>
-
-        <div class="mb-6">
-          <label class="block font-bold mb-2">Produtos:</label>
-          
-          <div class="flex flex-col md:flex-row items-start md:items-center gap-4 mb-4">
-            <label for="brigadeiros" class="flex-1">Brigadeiros (cento)</label>
-            <input type="number" id="brigadeiros" min="0" value="0"
-                   class="w-full md:w-24 px-3 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-primary">
-          </div>
-
-          <div class="flex flex-col md:flex-row items-start md:items-center gap-4 mb-4">
-            <label for="cupcakes" class="flex-1">Cupcakes (cento)</label>
-            <input type="number" id="cupcakes" min="0" value="0"
-                   class="w-full md:w-24 px-3 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-primary">
-          </div>
-
-          <div class="flex flex-col md:flex-row items-start md:items-center gap-4 mb-4">
-            <label for="docinhos" class="flex-1">Docinhos Tradicionais (cento)</label>
-            <input type="number" id="docinhos" min="0" value="0"
-                   class="w-full md:w-24 px-3 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-primary">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover-trigger transform hover:scale-105 transition-all duration-500 ease-in-out hover:shadow-xl">
+          <img src="images/brigadeiros.jpg" alt="" class="w-full h-48 object-cover transition-all duration-700 ease-in-out hover:scale-110"/>
+          <div class="p-4 hover-content">
+            <h3 class="text-lg font-semibold text-gray-800">Brigadeiros Gourmet</h3>
           </div>
         </div>
-
-        <div class="mb-6">
-          <label for="data" class="block font-bold mb-2">Data de Entrega:</label>
-          <input type="date" id="data" required
-                 class="w-full px-3 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-primary">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover-trigger transform hover:scale-105 transition-all duration-500 ease-in-out hover:shadow-xl">
+          <img src="images/caixa-de-doces.jpeg" alt="" class="w-full h-48 object-cover transition-all duration-700 ease-in-out hover:scale-110"/>
+          <div class="p-4 hover-content">
+            <h3 class="text-lg font-semibold text-gray-800">Variedade de sabores especiais</h3>
+          </div>
         </div>
-
-        <div class="mb-6">
-          <label for="observacoes" class="block font-bold mb-2">Observações:</label>
-          <textarea id="observacoes" rows="4"
-                    class="w-full px-3 py-3 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover-trigger transform hover:scale-105 transition-all duration-500 ease-in-out hover:shadow-xl">
+          <img src="images/doces-decorados.jpeg" alt="" class="w-full h-48 object-cover transition-all duration-700 ease-in-out hover:scale-110"/>
+          <div class="p-4 hover-content">
+            <h3 class="text-lg font-semibold text-gray-800">Opções para toda família</h3>
+          </div>
         </div>
-
-        <button type="submit" 
-                class="w-full bg-secondary hover:bg-primary text-white py-4 px-8 rounded-md text-lg transition-colors duration-300">
-          Enviar Pedido
-        </button>
-      </form>
+      </div>
+      <section class="bg-white rounded-lg shadow-md p-8 mb-8 transform hover:scale-[1.02] transition-all duration-500 ease-in-out hover:shadow-xl">
+        <h2 class="text-2xl font-bold text-secondary mb-4">Seja um Revendedor!</h2>
+        <div class="text-gray-700 space-y-4">
+          <p>Quer começar seu próprio negócio? Seja um revendedor dos nossos deliciosos doces!</p>
+          <ul class="list-disc list-inside">
+            <li class="hover:translate-x-2 transition-all duration-300 ease-in-out text-secondary">Preços especiais para revendedores</li>
+            <li class="hover:translate-x-2 transition-all duration-300 ease-in-out text-secondary">Suporte completo para iniciantes</li>
+            <li class="hover:translate-x-2 transition-all duration-300 ease-in-out text-secondary">Entrega para toda a região</li>
+            <li class="hover:translate-x-2 transition-all duration-300 ease-in-out text-secondary">Material de divulgação gratuito</li>
+            <li class="hover:translate-x-2 transition-all duration-300 ease-in-out text-secondary">Treinamento básico de vendas</li>
+          </ul>
+        </div>
+      </section>
+      <div class="w-full flex justify-center mb-8">
+        <a href="https://wa.me/5500000000000" 
+           target="_blank"
+           class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-full shadow-lg flex items-center transform hover:scale-110 transition-all duration-500 ease-in-out hover:shadow-xl">
+          <svg class="w-6 h-6 mr-2 transition-transform duration-300 ease-in-out group-hover:rotate-12" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+          </svg>
+          Fale Conosco
+        </a>
+      </div>
     </div>
-    <script src="main.js"></script>
   </body>
 </html>
