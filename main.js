@@ -40,7 +40,7 @@ products.forEach(product => {
         <div class="p-6">
             <h3 class="text-xl font-semibold mb-2">${product.name}</h3>
             <div class="flex justify-between items-center">
-                <span class="text-pink-600 font-bold">${product.price}</span>
+                <span class="text-[#592918] font-bold">${product.price}</span>
             </div>
         </div>
     `;

@@ -34,7 +34,7 @@ html {
 
 input:focus, textarea:focus {
     outline: none;
-    border-color: #db2777;
+    border-color:#592918;
     box-shadow: 0 0 0 3px rgba(219, 39, 119, 0.1);
 }
 
